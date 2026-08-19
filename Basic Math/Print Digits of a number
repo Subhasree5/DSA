@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int num=sc.nextInt();
+		System.out.println("the digits in the number "+num+" : ");
+		printDigits(num);
+	}
+	static void printDigits(int  n){
+	    while(n!=0){
+	        int digit=n%10;
+	        System.out.println(digit);
+	        n=n/10;
+	    }
+	}
+}
+
+
+Enter the number: 
+534700
+the digits in the number 534700 : 
+0
+0
+7
+4
+3
+5
