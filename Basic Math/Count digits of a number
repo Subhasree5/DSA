@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int num=sc.nextInt();
+		int result=countDigits(num);
+		System.out.println("The no.of digits in the number "+num+" : "+result);
+	}
+	static int countDigits(int n){
+	    int count=0;
+	    while(n!=0){
+	        int digit=n%10;
+	        count++;
+	        n=n/10;
+	    }
+	    return count;
+	}
+}
+
+
+Enter the number: 
+000056
+The no.of digits in the number 56 : 2
