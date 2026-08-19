@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int num=sc.nextInt();
+		int result=sumOfDigits(num);
+		System.out.println("The no.of digits in the number "+num+" : "+result);
+	}
+	static int sumOfDigits(int n){
+	    int sum=0;
+	    while(n!=0){
+	        int digit=n%10;
+	        sum+=digit;
+	        n=n/10;
+	    }
+	    return sum;
+	}
+}
+
+Enter the number: 
+53127
+The no.of digits in the number 53127 : 18
